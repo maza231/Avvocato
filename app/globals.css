@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root { --ink:#20201e; --paper:#f4f0e8; --copper:#a75c3b; --line:#d8d0c2; }
+:root { --ink:#20201e; --paper:#f4f0e8; --copper:#173b63; --line:#d8d0c2; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background:var(--paper); font-family:Arial, Helvetica, sans-serif; }
