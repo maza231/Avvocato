@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root { --ink:#20201e; --paper:#f4f0e8; --copper:#a75c3b; --line:#d8d0c2; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:Arial, Helvetica, sans-serif; }
+h1,h2,h3,.serif { font-family:Georgia, 'Times New Roman', serif; font-weight:400; }
+a { color:inherit; text-decoration:none; }
+.container { width:min(1180px, calc(100% - 40px)); margin-inline:auto; }
+.eyebrow { display:flex; align-items:center; gap:12px; text-transform:uppercase; letter-spacing:.18em; font-size:11px; font-weight:700; color:var(--copper); }
+.eyebrow:before { content:""; width:32px; height:1px; background:currentColor; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:15px 22px; border:1px solid var(--ink); font-size:13px; font-weight:700; transition:.25s; }
+.btn:hover { background:var(--ink); color:white; }
+.btn-dark { background:var(--ink); color:white; }
+.btn-dark:hover { background:var(--copper); border-color:var(--copper); }
+.grain { background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E"); }
+.field { width:100%; border:0; border-bottom:1px solid #aaa196; background:transparent; padding:14px 0; outline:none; font:inherit; }
+.field:focus { border-color:var(--copper); }
+@media (max-width:767px){ .container{width:min(100% - 28px,1180px)} }
